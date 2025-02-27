@@ -12,7 +12,7 @@
             <xs:sequence>
               <xs:element name="Id" type="xs:positiveInteger"/>
               <xs:element name="Title" type="xs:string"/>
-              <xs:element name="ReleaseDate" type="xs:date"/>
+              <xs:element name="ReleaseDate" type="xs:string"/>
               <xs:element name="Rating">
                 <xs:complexType>
                   <xs:sequence>
@@ -27,7 +27,7 @@
                     <xs:element name="ActualPrice">
                       <xs:complexType>
                         <xs:simpleContent>
-                          <xs:extension base="xs:decimal">
+                          <xs:extension base="xs:string">
                             <xs:attribute name="currency" type="xs:string" use="required"/>
                           </xs:extension>
                         </xs:simpleContent>
@@ -36,7 +36,7 @@
                     <xs:element name="CurrentPrice">
                       <xs:complexType>
                         <xs:simpleContent>
-                          <xs:extension base="xs:decimal">
+                          <xs:extension base="xs:string">
                             <xs:attribute name="currency" type="xs:string" use="required"/>
                           </xs:extension>
                         </xs:simpleContent>
